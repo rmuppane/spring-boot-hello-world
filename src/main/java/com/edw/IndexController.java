@@ -17,6 +17,8 @@ import java.util.HashMap;
 public class IndexController {
     @GetMapping("/")
     public HashMap helloWorld() {
+        if(true){
+        }
         return new HashMap<>(){{
             put("Message", "Hello Spring Boot. Ini setelah commit");
         }};
