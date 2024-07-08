@@ -17,12 +17,13 @@ import java.util.HashMap;
 public class IndexController {
     @GetMapping("/")
     public HashMap helloWorld() {
+        bad();
         return new HashMap<>(){{
             put("Message", "Hello Spring Boot. Ini setelah commit");
         }};
     }
 
-    /*public void bad() {
+    public void bad() {
         for (int i=0; i<10; i++) {
             for (int j=0; i<10; j++) {
                 // potentially infinite loop due to test on wrong variable
@@ -33,5 +34,5 @@ public class IndexController {
 
     private boolean shouldBreak() {
         return Math.random() < 0.5;
-    }*/
+    }
 }
